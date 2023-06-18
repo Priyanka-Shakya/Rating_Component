@@ -1,5 +1,5 @@
 
-let count = 0;
+let count = 4;
 const NumberBtn = document.querySelectorAll('.btn');
 const subBtn = document.querySelector('#subBtn');
 const show = document.querySelector('b');
@@ -9,26 +9,19 @@ const thankuBox = document.querySelector('.thankuBox');
 
 
 Array.from(NumberBtn).forEach((button) => {
-    button.addEventListener('click', () => {
-        if(button.className==='btn clicked'){
-            count=count+0;
-        }else{
-            button.classList.add('clicked');
-            button.style.backgroundColor = 'green';
-            button.style.color='white';
-            count = count+1;
-        } 
+    button.addEventListener('click', (e) => {
+        button.style.backgroundColor = 'lightgreen';
+        button.style.color='white';
+        count = e.target.innerHTML;
+
     });
 });
 
 function rating() {
-    if(count==0){
-        alert('please rate Us!!!');
-        return;
-    }
     container.style.display = 'none';
     thankuBox.style.display = 'block';
     show.innerHTML = count;
 }
+
 
 subBtn.addEventListener('click', rating);

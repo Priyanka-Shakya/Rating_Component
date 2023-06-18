@@ -17,8 +17,8 @@ body {
 }
 
 .container {
-    height: 62vh;
-    width: 27vw;
+    height: 360px;
+    width: 350px;
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
@@ -104,8 +104,8 @@ p {
 
 
 .thankuBox {
-    height: 58vh;
-    width: 27vw;
+    height: 330px;
+    width: 320px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -134,7 +134,7 @@ p {
  display: flex;
  justify-content: center;
  align-items: center;
- margin-left: 90px;
+ margin-left: 70px;
  border-radius: 30px;
  padding-bottom: 10px;
  background-color:hsl(213, 14%, 30%);

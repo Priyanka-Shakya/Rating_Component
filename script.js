@@ -14,7 +14,8 @@ Array.from(NumberBtn).forEach((button) => {
             count=count+0;
         }else{
             button.classList.add('clicked');
-            button.style.backgroundColor = 'hsl(25, 97%, 53%)';
+            button.style.backgroundColor = 'green';
+            button.style.color='white';
             count = count+1;
         } 
     });
